@@ -94,11 +94,16 @@
                             </div>
                         [% END %]
 
-                        <div id="patron_messages" class="circmessage attention">
-                            [% INCLUDE 'patron_messages.inc' moremember = 1 %]
+                        <div class="col-sm-12">
+                            <div id="patron_messages" class="circmessage attention">
+                                [% INCLUDE 'patron_messages.inc' moremember = 1 %]
+                            </div>
                         </div>
 
-                        <h1>[% INCLUDE 'patron-title.inc' no_html = 1 %]</h1>
+                        <div class="col-sm-12">
+                            <h1>[% INCLUDE 'patron-title.inc' no_html = 1 %]</h1>
+                        </div>
+
                         <div class="col-sm-6">
 
                             <div id="patron-information" class="patroninfo-section">
