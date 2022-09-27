@@ -5,7 +5,7 @@
 @import "fonts";
 
 ::selection {
-    background: #418940;
+    background: $background-color-primary;
     color: #FFFFFF;
 }
 
@@ -64,7 +64,7 @@ a {
     }
 
     &.clear_date {
-        color: #418940;
+        color: $background-color-primary;
         font-size: 130%;
         vertical-align: middle;
 
@@ -78,7 +78,7 @@ a {
         i, img {
             text-align: center;
             color: $green-text-color;
-            border: solid 3px #71B443;
+            border: solid 3px $background-color-secondary;
             border-radius: 50%;
             background-color: transparent;
             width: 40px;
@@ -95,14 +95,14 @@ a {
         }
 
         &:hover {
-            color: #418940;
+            color: $background-color-primary;
             text-decoration: none;
             font-weight: bold;
 
             i, img {
-                border-color: #418940;
+                border-color: $background-color-primary;
                 background-color: transparent;
-                color: #418940;
+                color: $background-color-primary;
             }
 
         }
@@ -403,8 +403,8 @@ aside {
             &.active > a, a:hover, a.current {
                 background-color: #F3F4F4;
                 text-decoration: none;
-                color: #418940;
-                border-left: solid 5px #418940;
+                color: $background-color-primary;
+                border-left: solid 5px $background-color-primary;
                 font-weight: bold;
             }
         }
@@ -623,7 +623,7 @@ cite {
 input,
 textarea {
     &:focus {
-        border-color: #418940;
+        border-color: $background-color-primary;
         border-radius: 4px;
     }
 }
@@ -1523,7 +1523,7 @@ i {
     }
 
     &.success {
-        color: #418940;
+        color: $background-color-primary;
     }
 
     &.warn {
@@ -1791,7 +1791,7 @@ i {
     background-color: #FEC32C;
     i {
         &.fa {
-            color: #418940;
+            color: $background-color-primary;
         }
     }
 }
@@ -2670,7 +2670,7 @@ td.bundle {
 .ui-widget-content {
     background: #FFFFFF none;
     border-radius: 4px;
-    border: 3px solid #418940;
+    border: 3px solid $background-color-primary;
     color: #222222;
 }
 
@@ -2784,7 +2784,7 @@ td.bundle {
     .ui-tabs-panel {
         background: #FFF none;
         border-radius: 4px;
-        border: 3px solid #418940;
+        border: 3px solid $background-color-primary;
 
         fieldset {
             box-shadow: none;
@@ -2792,13 +2792,13 @@ td.bundle {
     }
     .ui-tabs-nav {
         li {
-            background: #71B443;
+            background: $background-color-secondary;
             border: 0;
             margin-right: .4em;
             border-radius: 4px 4px 0 0;
 
             &.ui-tabs-active, &.ui-state-hover {
-                background-color: #418940;
+                background-color: $background-color-primary;
                 border-radius: 4px 4px 0 0;
                 border: 0;
                 border-bottom-width: 0;
@@ -2831,11 +2831,11 @@ td.bundle {
 
     .ui-state-hover {
         a {
-            color: #418940;
+            color: $background-color-primary;
 
             &:link,
             &:visited {
-                color: #418940;
+                color: $background-color-primary;
             }
         }
     }
@@ -2940,13 +2940,13 @@ td.bundle {
             position: relative;
             top: 1px;
             white-space: nowrap;
-            background: #71B443;
+            background: $background-color-secondary;
 
             &.active, &:hover {
                 font-weight: normal;
                 padding-bottom: 1px;
 
-                background-color: #418940;
+                background-color: $background-color-primary;
                 border: 0;
                 border-bottom-width: 0;
 
@@ -2975,7 +2975,7 @@ td.bundle {
 
     .tabs-container {
         background: none repeat scroll 0 0 transparent;
-        border: 3px solid #418940;
+        border: 3px solid $background-color-primary;
         border-radius: 4px;
         color: #222222;
         display: block;
@@ -2988,7 +2988,7 @@ td.bundle {
         .ui-tabs-panel {
             background: #FFF none;
             border-radius: 4px;
-            border: 3px solid #418940;
+            border: 3px solid $background-color-primary;
 
             fieldset {
                 box-shadow: none;
@@ -3160,7 +3160,7 @@ nav {
 
             li {
                 display: inline;
-                color : #418940;
+                color : $background-color-primary;
                 font-style: italic;
 
                 &+li::before {
@@ -3546,7 +3546,7 @@ code {
 
 .tab-content {
     background-color: #fff;
-    border: 3px solid #418940;
+    border: 3px solid $background-color-primary;
     border-radius: 4px;
     padding: 1em;
 }
@@ -3554,16 +3554,16 @@ code {
 .nav-tabs {
     > li {
         > a {
-            background-color: #71B443;
+            background-color: $background-color-secondary;
             color: #FFFFFF;
             line-height: 1.42857143;
             margin-right: .4em;
             padding: .5em 1em;
 
             &:hover, &:focus, &:active {
-                background-color: #418940;
+                background-color: $background-color-primary;
                 border-radius: 4px 4px 0 0;
-                border: 1px solid #418940;
+                border: 1px solid $background-color-primary;
                 padding: .5em 1em;
                 text-decoration: none;
                 color: #FFFFFF;
@@ -3574,7 +3574,7 @@ code {
             a,
             a:hover,
             a:focus {
-                background-color: #418940;
+                background-color: $background-color-primary;
                 border-radius: 4px 4px 0 0;
                 color: #FFFFFF;
                 cursor: default;
@@ -3694,7 +3694,7 @@ progress {
 
 #browse-return-to-results {
     background-color: #e6e6e6;
-    border: 1px solid lighten(#418940, 30%);
+    border: 1px solid lighten($background-color-primary, 30%);
     border-bottom-width: 0;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
@@ -3705,7 +3705,7 @@ progress {
 
 .browse-button {
     background-color: transparent;
-    border: 1px solid lighten(#418940, 30%);
+    border: 1px solid lighten($background-color-primary, 30%);
     display: block;
     overflow: hidden;
     padding: .4em .6em;
@@ -4283,7 +4283,7 @@ input.renew {
             font-weight: bold;
 
             &:hover {
-                background-color: #418940;
+                background-color: $background-color-primary;
                 color: white;
                 text-decoration: none;
             }
